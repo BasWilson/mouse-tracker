@@ -158,7 +158,7 @@ async function switchScreen() {
 
 function adjustWindowSize() {
 
-  if (!display) return;
+  if (!display || !getSetting("resizeWindowOnSmallSize")) return;
 
   rect = { width: window.innerWidth, height: window.innerHeight };
 
