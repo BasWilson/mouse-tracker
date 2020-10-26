@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" href="index.css" />
+  <script defer src="render.js"></script>
+</head>
+
+<body>
+  <div class="container">
+    <video id="vid1"></video>
+  </div>
+
+  <div class="credits">
+    <h1 class="footer">Met in Space</h1>
+  </div>
+
+  <button class="settings-button"><img src="assets/settings.svg" /></button>
+
+  <div class="settings">
+    <h1 class="m-b-10">Settings</h1>
+
+    <p>Frames per second (FPS) <span id="fps">30</span></p>
+    <input id="fps-slider" type="range" min="10" step="10" max="120" />
+
+    <p>Follow mouse over different monitors (beta)</p>
+    <input id="follow-mouse" type="checkbox" />
+
+    <p>Automatically resize window when content is smaller than window (eg: Monitor resolution is less than window's
+      size)</p>
+    <input id="resize-small" type="checkbox" />
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,107 @@
+@font-face {
+  font-family: "cyberway";
+  src: url("./assets/cyberway.ttf");
+  font-weight: bold;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  color: white;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  text-align: center;
+  background-color: black;
+}
+
+video {
+  object-fit: cover;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+button {
+  outline: none;
+  border: none;
+  padding: 0;
+}
+
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.credits {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  position: fixed;
+  top: 0;
+  bottom: 20px;
+  left: 0;
+  right: 0;
+  justify-content: flex-end;
+  opacity: 0.5;
+}
+
+.footer {
+  font-family: "cyberway";
+  word-spacing: 7px;
+}
+
+.settings {
+  display: none;
+  flex-direction: column;
+  text-align: center;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: left;
+  padding: 20px;
+  background-color: black;
+}
+
+.settings input {
+  max-width: 300px;
+  margin-top: 5px;
+  margin-bottom: 20px;
+}
+
+.settings-button {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  background-color: transparent;
+  z-index: 2;
+}
+
+.settings-button img {
+  width: auto;
+  height: 30px;
+  transition: .2s all ease-in-out;
+  cursor: pointer;
+  opacity: .5;
+}
+
+
+.settings-button img:hover {
+  transform: scale(1.05);
+  opacity: 1;
+}
+
+.settings-button img:active {
+  transform: scale(1);
+  opacity: 1;
+}
+
+.m-b-10 {
+  margin-bottom: 10px;
+}
