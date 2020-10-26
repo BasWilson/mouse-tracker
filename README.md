@@ -3,6 +3,8 @@
 This is a very basic application that will record the region around your mouse. 
 It's great when you want to stream your screen to Discord and have it follow your mouse.
 
+[Download Mouse tracker](https://github.com/BasWilson/mouse-tracker/releases/)
+
 # Features
 - Track mouse over all your monitors without manually switching
 - Switch between monitors seamlessly
@@ -16,7 +18,7 @@ It's great when you want to stream your screen to Discord and have it follow you
 - Set tracking FPS from 10 - 120
 - Windows 10 (Pro) support
 - Region resizing
-[Download Windows installer](https://github.com/BasWilson/mouse-tracker/releases/)
+- [Windows installer release](https://github.com/BasWilson/mouse-tracker/releases/)
 
 # Todo when I have time
 - Clean up
