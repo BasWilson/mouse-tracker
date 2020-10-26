@@ -1,6 +1,6 @@
 {
   "name": "mouse-tracker",
-  "productName": "mouse-tracker",
+  "productName": "Mouse tracker",
   "version": "1.0.0",
   "description": "This is a very basic application that will record the region around your mouse.",
   "main": "src/index.js",
@@ -9,11 +9,33 @@
     "package": "electron-forge package",
     "make": "electron-forge make",
     "publish": "electron-forge publish",
-    "lint": "echo \"No linting configured\""
+    "build": "electron-builder"
   },
   "keywords": [],
   "author": "Bas Wilson",
   "license": "MIT",
+  "build": {
+    "appId": "com.baswilson.mousetracker",
+    "productName": "Mouse tracker",
+    "copyright": "Copyright © 2020 Bas Wilson",
+    "directories": {
+      "output": "./build"
+    },
+    "win": {
+      "target": [
+        "nsis"
+      ],
+      "icon": "src/assets/icon.ico",
+      "publisherName": "Bas Wilson"
+    },
+    "nsis": {
+      "installerIcon": "src/assets/icon.ico",
+      "uninstallerIcon": "src/assets/icon.ico",
+      "uninstallDisplayName": "Mouse tracker",
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true
+    }
+  },
   "config": {
     "forge": {
       "packagerConfig": {},
@@ -52,6 +74,7 @@
     "@electron-forge/maker-squirrel": "^6.0.0-beta.50",
     "@electron-forge/maker-zip": "^6.0.0-beta.50",
     "devtron": "^1.4.0",
-    "electron": "8.0.2"
+    "electron": "8.0.2",
+    "electron-builder": "^22.8.1"
   }
 }
